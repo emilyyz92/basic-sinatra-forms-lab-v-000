@@ -6,7 +6,8 @@
  </head>
  <body>
    <h2>Basketball Team Players: </h2>
-   <p>Name: <%= @team_hash[:name] %></p>
+   <%= @team_hash.each do |key,value| %>
+    <p><%= key.to_s %>: <%=value%></p>
 
 
  </body>
