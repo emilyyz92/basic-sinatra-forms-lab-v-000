@@ -6,9 +6,15 @@
  </head>
  <body>
    <h2>Basketball Team Players: </h2>
-   <% @team_hash.each do |key,value| %>
-    <p><%=key.to_s%>: <%=value%></p>
-    <% end %>
+   <p>
+   Team Name: <%= @name %>
+    Coach: <%= @coach %>
+    Point Guard: <%=@pg %>
+    Power Forward: <%=@pf %>
+    Shooting Guard: <%=@sg %>
+    Small Forward: <%=@sf %>
+    Center: <%=@c %>
+  </p>
 
 
  </body>
